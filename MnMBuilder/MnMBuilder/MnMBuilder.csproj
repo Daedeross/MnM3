@@ -57,6 +57,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataModels\Ability.cs" />
+    <Compile Include="DataModels\BaseTrait.cs" />
+    <Compile Include="DataModels\DataModelBase.cs" />
+    <Compile Include="DataModels\ITrait.cs" />
+    <Compile Include="DataModels\MM3Character.cs" />
+    <Compile Include="Helpers\BlankClass.cs" />
+    <Compile Include="Helpers\Log.cs" />
+    <Compile Include="Helpers\ObservableDictionary.cs" />
+    <Compile Include="Helpers\ObservableSortedDictionary.cs" />
+    <Compile Include="Helpers\ObservableStyleDictionary.cs" />
+    <Compile Include="Helpers\RelayCommand.cs" />
+    <Compile Include="Helpers\SerializableDictionary.cs" />
     <Compile Include="Views\CharacterView.xaml.cs">
       <DependentUpon>CharacterView.xaml</DependentUpon>
     </Compile>
@@ -105,7 +117,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataModels\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
